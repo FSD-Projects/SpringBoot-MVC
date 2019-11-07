@@ -21,7 +21,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	public Customer saveCustomer(Customer customer) {
 		// TODO Auto-generated method stub
 		Session currentSession = entityManager.unwrap(Session.class);
-		currentSession.persist(customer);
+		currentSession.save(customer);
 		return customer;
 	}
 }
